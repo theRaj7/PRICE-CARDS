@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Price Cards</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: "Nunito", sans-serif;
+      }
+      .container {
+        height: 100vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+      }
+      .card {
+        border-radius: 30px;
+        color: #fff;
+        height: max-content;
+        width: 310px;
+        text-align: center;
+      }
+      .card-1 {
+        background-color: #a9ab39;
+      }
+      .card-2 {
+        background-color: #54b6b6;
+      }
+      .card-3 {
+        background-color: #f24949;
+      }
+
+      .heading {
+        font-size: 35px;
+        margin: 30px 10px 10px 10px;
+      }
+      .sub-text {
+        font-size: 14px;
+        font-weight: 100;
+        color: rgb(223, 215, 215);
+        font-family: "Raleway", sans-serif;
+        text-transform: uppercase;
+      }
+      .card_details {
+        height: 200px;
+        width: 220px;
+        border-radius: 20px;
+        color: rgb(41, 41, 41);
+        font-weight: lighter;
+        background-color: #fff;
+        position: relative;
+        left: 45px;
+        padding: 80px 0 10px 0;
+        margin-top: 40px;
+        font-size: 14px;
+      }
+      .not_available {
+        color: rgb(85, 81, 81);
+        font-size: 13px;
+      }
+      .no {
+        color: rgb(237, 74, 74);
+        font-size: 13px;
+      }
+      .btn {
+        padding: 5px 30px 5px 30px;
+        background-color: rgb(0, 0, 0);
+        color: #fff;
+        border: none;
+        border-radius: 15px;
+        position: relative;
+        top: -15px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="card card-1">
+        <h1 class="heading">Starter</h1>
+        <p class="sub-text">Monthly Plan</p>
+        <div class="card_details">
+          <p>Disk Space 10GB</p>
+          <p>Band Width 5GB</p>
+          <p class="not_available">
+            Wordpress Plugins <span class="no">NO</span>
+          </p>
+          <p class="not_available">SMTP Server <span class="no">NO</span></p>
+          <p class="not_available">
+            Usable Template's <span class="no">NO</span>
+          </p>
+        </div>
+        <button class="btn">Buy Now</button>
+      </div>
+      <div class="card card-2">
+        <h1 class="heading">Premium</h1>
+        <p class="sub-text">Monthly Plan</p>
+        <div class="card_details">
+          <p>Disk Space 100GB</p>
+          <p>Band Width 20GB</p>
+          <p>Wordpress Plugins</p>
+          <p>1000 Emails Per Day</p>
+          <p class="not_available">
+            Usable Template's <span class="no">NO</span>
+          </p>
+        </div>
+        <button class="btn">Buy Now</button>
+      </div>
+      <div class="card card-3">
+        <h1 class="heading">Unlimited</h1>
+        <p class="sub-text">Monthly Plan</p>
+        <div class="card_details">
+          <p>Disk Space 500GB</p>
+          <p>Band Width 40GB</p>
+          <p>Wordpress Plugins</p>
+          <p>20,000 Email Per Day</p>
+          <p>Free Usable Template's</p>
+        </div>
+        <button class="btn">Buy Now</button>
+      </div>
+    </div>
+  </body>
+</html>
